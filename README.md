@@ -1,1 +1,11 @@
-# dockerfile
+services:
+web:
+image: votre_username/monapp:latest
+ports:
+- "8080:80"
+restart: unless-stopped
+Commandes :
+docker compose pull
+docker compose up -d
+docker ps
+# http://STAGING_HOST:8080
